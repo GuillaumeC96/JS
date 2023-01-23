@@ -1,29 +1,3 @@
-alert("Exercice 1");
-
-var txt = "";
-var ent ="init";
-var i = 0;
-var Nb = 0;
-
-do 
-{
-    i++;
-    var ent = prompt("Entrez le prénom N°"+i,"");
-    var txt = txt+" "+ent;
-    var Nb = i-1;
-   
-} while (!ent =="");
-
-alert("Les "+Nb+" prénoms "+txt);
-
-
-
-
-
-
-
-
-
 alert("Exercice 5");
 
 var mot = prompt("Choisir un mot","");
@@ -121,7 +95,23 @@ do
 alert(txt);
 
 
+alert("Exercice 1");
 
+var txt = "";
+var ent ="init";
+var i = 0;
+var Nb = 0;
+
+do 
+{
+    i++;
+    var ent = prompt("Entrez le prénom N°"+i,"");
+    var txt = txt+" "+ent;
+    var Nb = i-1;
+   
+} while (!ent =="");
+
+alert("Les "+Nb+" prénoms "+txt);
 
 
 
