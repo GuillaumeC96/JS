@@ -1,3 +1,58 @@
+alert("Exercice 4");
+
+var PU = prompt("Prix unitaire");
+var QTECOM = prompt("Quantité");
+var TOT = (PU*QTECOM);
+var REM = 0;
+
+if(TOT>=100 && TOT <=200){
+    var REM = 0.05;
+}else if(TOT>200){
+    var REM = 0.1;
+}
+
+var TOTREM = TOT*(1-REM);
+
+var PORT = 0.02*TOTREM;
+
+if(TOTREM>500){
+    var PORT = 0;
+}
+
+if(PORT<6 && TOTREM<=500){
+    var PORT = 6;
+}
+
+var PAP = TOTREM + PORT;
+
+alert(PAP);
+
+
+
+
+
+
+
+
+
+
+alert("Exercice 3");
+
+var A = prompt("Choisir le prénom","");
+
+var tab = ["Audrey", "Aurélien", "Flavien", "Jérémy", "Laurent", "Melik", "Nouara", "Salem", "Samuel", "Stéphane"];
+var lg1 = tab.length;
+
+const result = tab.filter(tab => tab !== A);
+var lg2 = result.length;
+
+if(lg1>lg2){
+    result.push('');
+    alert(result);
+}else{
+    alert("Erreur : pas trouvé \n"+result);
+}
+
 
 
 
