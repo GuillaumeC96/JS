@@ -10,6 +10,9 @@ if(mod==0) {
     alert('impair');
 }
 
+
+
+
 alert('Exercice 2');
 
 var nai = prompt('Entrez votre année de naissance','');
@@ -24,17 +27,27 @@ if(age>=18) {
     alert('Mineur');
 }
 
+
+
+
 alert('Exercice 3');
 
 var nbr1 = prompt('Entrez un premier nombre','');
-
 var nbr2 = prompt('Entrez un deuxieme nombre','');
+
+parseInt(nbr1);
+parseInt(nbr2);
 
 var ope = prompt('Entrez un opérateur','');
 
-
-if(ope="+") {
+if(ope=="+") {
     var res = parseInt(nbr1)+parseInt(nbr2);
+} else if (ope=="-"){
+    var res = parseInt(nbr1)-parseInt(nbr2);
+} else if (ope=="*"){
+    var res = parseInt(nbr1)*parseInt(nbr2);
+} else if (ope=="/"){
+    var res = parseInt(nbr1)/parseInt(nbr2);
 }
 
 alert(res);
